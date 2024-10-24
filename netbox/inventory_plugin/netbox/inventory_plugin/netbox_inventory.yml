@@ -1,0 +1,18 @@
+plugin: netbox.netbox.nb_inventory
+api_endpoint: http://XXXXXXXXXXXXXXXX/
+token: XXXXXXXXXXXXXXXXXXXX
+validate_certs: False
+config_context: True
+#compose:
+#   ansible_network_os: platform.slug
+group_by:
+  - device_roles
+  - sites
+  - tenants
+  - platforms
+
+#device_query_filters:
+
+#  - status: 'active'
+device_query_filters:
+# - status: 'active'
